@@ -173,7 +173,7 @@ window.btnAdd = (id) => {
     }
 };
 
-// - in giỏ hàng
+// - trong giỏ hàng
 window.btnMinus = (id) => {
     // Tìm sản phẩm trong giỏ hàng theo id
     const cartItem = cart.find(item => item.product.id === id);
@@ -208,7 +208,7 @@ window.emptyCart = function () {
     localStorage.setItem('cart', JSON.stringify(cart));
 };
 
-//button thanh toan
+//button thanh toán
 window.payNow = () => {
     if (cart.length > 0) {
         Swal.fire({
